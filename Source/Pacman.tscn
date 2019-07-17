@@ -1,10 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Pacman.cs" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://resources/pacman.png" type="Texture" id=2]
+[ext_resource path="res://Pacman_movement.tres" type="Animation" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 31.157
+radius = 32.0
 
 [node name="Pacman" type="KinematicBody2D"]
 script = ExtResource( 1 )
@@ -13,5 +14,13 @@ script = ExtResource( 1 )
 shape = SubResource( 1 )
 
 [node name="GFX" type="Sprite" parent="."]
+scale = Vector2( 2, 2 )
 texture = ExtResource( 2 )
+hframes = 8
+frame = 7
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "packman_movement"
+playback_speed = 8.0
+anims/packman_movement = ExtResource( 3 )
 
