@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pacman.png-0a1ece2a35ed3a9b4357e538ad4333c8.stex"
+path="res://.import/pacman_movement.png-794e57f2e3ad2e3eb0dca64512ef8df5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/pacman.png"
-dest_files=[ "res://.import/pacman.png-0a1ece2a35ed3a9b4357e538ad4333c8.stex" ]
+source_file="res://resources/pacman_movement.png"
+dest_files=[ "res://.import/pacman_movement.png-794e57f2e3ad2e3eb0dca64512ef8df5.stex" ]
 
 [params]
 
